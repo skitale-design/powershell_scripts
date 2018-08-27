@@ -33,24 +33,7 @@ function InTwoFolders($folder)
     if((countFilesIn $folder) -ne 1)
     {
         createFolders $folder
-
-      <#  "folder = $folder"
-        "Файлов в директории $folder = $filesInFolder"
-        $folder1Exists =  (Test-Path $folder'\1')
-        $folder2Exists =  (Test-Path $folder'\2')
-
-        If(!$folder1Exists)
-        {
-            "Test-Path $folder'\1' --> $folder1Exists"
-            createFolders "$folder"
-        }
-
-        If(!$folder2Exists)
-        {
-            "Test-Path $folder'\2' --> $folder2Exists"            
-            createFolders "$folder"
-        }#>
-     }
+    }
 
     "folder = $folder"
     $i = 1
